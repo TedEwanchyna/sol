@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  supplier: MyString
+  accountNum: 1
+  invoiceNum: 1
+  excepionalDiscount: 9.99
+  PHSAccorded: 9.99
+  TotalPHS: 9.99
+  GoodsServicesReceived: MyString
+
+two:
+  supplier: MyString
+  accountNum: 1
+  invoiceNum: 1
+  excepionalDiscount: 9.99
+  PHSAccorded: 9.99
+  TotalPHS: 9.99
+  GoodsServicesReceived: MyString

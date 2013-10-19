@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @founder.name %>
+</p>
+
+<p>
+  <b>Fundaccontnum:</b>
+  <%= @founder.fundAccontNum %>
+</p>
+
+<p>
+  <b>Phsheld:</b>
+  <%= @founder.PHSHeld %>
+</p>
+
+<p>
+  <b>Preferredshares:</b>
+  <%= @founder.preferredShares %>
+</p>
+
+<p>
+  <b>Phsorigin:</b>
+  <%= @founder.PHSOrigin %>
+</p>
+
+<p>
+  <b>Memberships:</b>
+  <%= @founder.memberships %>
+</p>
+
+<p>
+  <b>Riskcapital:</b>
+  <%= @founder.riskCapital %>
+</p>
+
+<p>
+  <b>Specialcompensation:</b>
+  <%= @founder.specialCompensation %>
+</p>
+
+
+<%= link_to 'Edit', edit_founder_path(@founder) %> |
+<%= link_to 'Back', founders_path %>

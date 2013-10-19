@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruby on Rails: Welcome aboard</title>
+    <style type="text/css" media="screen">
+      body {
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        background-color: #f0f0f0;
+        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+        font-size: 13px;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      a  {color: #03c}
+      a:hover {
+        background-color: #03c;
+        color: white;
+        text-decoration: none;
+      }
+
+
+      #page {
+        background-color: #f0f0f0;
+        width: 750px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #content {
+        float: left;
+        background-color: white;
+        border: 3px solid #aaa;
+        border-top: none;
+        padding: 25px;
+        width: 500px;
+      }
+
+      #sidebar {
+        float: right;
+        width: 175px;
+      }
+
+      #footer {
+        clear: both;
+      }
+
+      #header, #about, #getting-started {
+        padding-left: 75px;
+        padding-right: 30px;
+      }
+
+
+      #header {
+//        background-image: url("assets/rails.png");
+        background-image: url("assets/Indigene\ Mutual\ Aid\ Comite\ logo.jpg");
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 64px;
+      }
+      #header h1, #header h2 {margin: 0}
+      #header h2 {
+        color: #888;
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+
+      #about h3 {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      #about-content {
+        background-color: #ffd;
+        border: 1px solid #fc0;
+        margin-left: -55px;
+        margin-right: -10px;
+      }
+      #about-content table {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 11px;
+        border-collapse: collapse;
+      }
+      #about-content td {
+        padding: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+      #about-content td.name  {color: #555}
+      #about-content td.value {color: #000}
+
+      #about-content ul {
+        padding: 0;
+        list-style-type: none;
+      }
+
+      #about-content.failure {
+        background-color: #fcc;
+        border: 1px solid #f00;
+      }
+      #about-content.failure p {
+        margin: 0;
+        padding: 10px;
+      }
+
+
+      #getting-started {
+        border-top: 1px solid #ccc;
+        margin-top: 25px;
+        padding-top: 15px;
+      }
+      #getting-started h1 {
+        margin: 0;
+        font-size: 20px;
+      }
+      #getting-started h2 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333;
+        margin-bottom: 25px;
+      }
+      #getting-started ol {
+        margin-left: 0;
+        padding-left: 0;
+      }
+      #getting-started li {
+        font-size: 18px;
+        color: #888;
+        margin-bottom: 25px;
+      }
+      #getting-started li h2 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 18px;
+        color: #333;
+      }
+      #getting-started li p {
+        color: #555;
+        font-size: 13px;
+      }
+
+
+      #sidebar ul {
+        margin-left: 0;
+        padding-left: 0;
+      }
+      #sidebar ul h3 {
+        margin-top: 25px;
+        font-size: 16px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      #sidebar li {
+        list-style-type: none;
+      }
+      #sidebar ul.links li {
+        margin-bottom: 5px;
+      }
+
+      .filename {
+        font-style: italic;
+      }
+    </style>
+    <script type="text/javascript">
+      function about() {
+        info = document.getElementById('about-content');
+        if (window.XMLHttpRequest)
+          { xhr = new XMLHttpRequest(); }
+        else
+          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
+        xhr.open("GET","rails/info/properties",false);
+        xhr.send("");
+        info.innerHTML = xhr.responseText;
+        info.style.display = 'block'
+      }
+    </script>
+  </head>
+  <body>
+    <div id="page">
+<!--
+      <div id="sidebar">
+        <ul id="sidebar-items">
+          <li>
+            <h3>Browse the documentation</h3>
+            <ul class="links">
+              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
+              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
+              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
+              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+-->
+      <div id="content">
+<!--           <h2>You&rsquo;re riding Ruby on Rails!</h2> -->
+
+        <div id="header">
+          <h1>Sharing Our Livelihood</h1>
+        </div>
+
+        <div id="about">
+<!--          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3> -->
+          <div id="about-content" style="display: none"></div>
+<br />
+<table>
+<tr><td>
+Indigene from Latin meaning self-generating
++     
+Community from Latin meaning together
++ 
+gift or service.
+<br />
+</td></tr>
+<tr><td>
+'Indig&egrave;ne' du Latine en sens que g&eacute;n&eacute;r&eacute; du soi
+ + 
+'Communaut&eacute;' du Latine ensemble
+ + 
+cadeau ou service.
+<br />
+</td></tr>
+<tr><td>
+Indigene Community 
+<br/>
+<a href='www.indigenecommunity.info'>
+www.indigenecommunity.info
+</a>
+<br/>
+Communaut&eacute; Indig&egrave;ne
+<br/>
+</td></tr>
+</table>
+        </div>
+
+        <div id="getting-started">
+
+
+<p>
+RATEABLE CORPORATIONS - The human responsibility to recognize,
+welcome & include each other in economy & community is an old practice
+at the root of community.  Indigene Community calls for all corporations,
+institutions  & government to become Participatory as found in 
+<a href='https://sites.google.com/site/indigenecommunity/relational-economy/3-rateable-corporations'> provisions for Rateable Corporations in both profit & non-profit corporate law</a>.
+</p>
+<p>
+LaSalle Gardens, Kahnawake North, <a href='https://sites.google.com/site/indigenecommunity/structure/9-do-we-know-who-we-are'>'DO-WE-KNOW-WHO-WE-ARE-?'</a>  is centered
+in the rues Clement, Bergevin, Jean-Milot, des-Oblats, Louis-Fortier,
+Vezina, St-Patrick, Stirling neighbourhood.  Residents & businesses from
+other neighbourhoods are welcome & will eventually form new nuclei.
+Human Resource Catalogue, HRC, Resource Mapping & online accounting
+within a Community Investment & Exchange System CIES based in humanity's
+worldwide 'self-generating' heritage.
+
+</p>
+<p>
+Welcome to our on-line CATALOGUING of folks & their
+talents, goods & services, which supply our neighbourhood
+<a href='#' onclick="alert('\'community\' L (\'together + gift or services\')')">community</a>. 
+Each person is invited to join our committee
+& place text-descriptions, pictures, video & audio, documents & links to
+your web sites. Do you have new or second-hand goods, talents or services,
+which you'd like to market among your neighbours & further, on-line? Would
+you like to meet & join with other vendors in your community, who have
+similar talents & goods to form 
+<a href='#' onclick="alert('\'companies\' (L. \'together\' + \'bread\')')">companies</a>
+with greater capacities?
+
+</p>
+<p>
+MEMES (Memory of all contributions, coined by Richard Dawkins in 1978
+in the Selfish Gene as "Self-replicating unit of transmission for human
+behaviour and cultural transmission") are equal in value to the current
+Quebec Minimum Wage (10$15/ hour in 2013) or the value of a basic hour of
+work for an untrained beginning worker, which is capable of supporting
+a Living-Wage. As Quebec's Minimum Wage rises so does the value of the
+Meme. The Corporate Board may adjust the Meme's value in consideration
+of an adequate Living Wage. Each Vendor is free to charge rates per
+hour or per task as they desire but we expect rates roughly following
+market rates for goods & services. Members invest/affiliate their Memes
+to accounts within each Association where their membership rights &
+benefits are received.
+</p>
+
+<p>
+Each EXCHANGE brings Vendors 'Memes' which bring ownership, voting power &
+credits for the gifts & services of others.  We have individual & business
+members.  Meme-holders are grouped together with other similar vendors
+in Production Societies, which compose the 
+<a href='#' onclick="alert('\'corporation\' (L \'corp\' = \'body\')')">corporation</a>
+& are represented on the board.  We charge approximately 7%
+per transaction as an Administration fee to the Vendor.  We require
+that Vendors invest approximately 8% (Depending on meme ownership,
+volume sales & our specialized Production Societies are charged less)
+per transaction in Memes.  </p>
+
+<p>
+MULTI-STAKEHOLDER MEMBERS - Our 
+<a href='#' onclick="alert('\'indigenous\' (L \'self-generating\')')">indigenous</a>
+<a href='#' onclick="alert('\'economic\' (Greek \'oikos\' = \'home\')')">economic</a>
+system is designed to include the
+whole community with every form of contribution people make to their
+essential goods & services economy accounted for through Time-based
+Human-Resource Accounting & 
+<a href='#' onclick="alert('\'caucused\' (Iroquois = \'grouping of like interests\')')">caucused</a>.  
+The following four stakeholder accounting modules for
+Consumers, Workers, Suppliers & Founders, represent the full-cycle of the
+economic cycle.  This holistic indigenous accounting heritage is the long
+forgotten origin of both capitalism & cooperation, which fragment from
+it during the invasions, aggressions & murder of the colonial period up
+to & including our time.  </p>
+
+<p>
+CONSUMER members own at least 2 Memes per family or household.
+With increased levels of memes Consumers are charged less per
+transaction. Every Meme invested accredits 1/10th % of each transactions
+value to the Customer's Meme account. Every 10 Memes invested in ownership
+accredits 1 % of each Vendor/Customer sale per Transaction credited to
+a Customer's Meme account up to a maximum of 10% taken proportionately
+from the 7% Administration & 8% Meme investment. All Meme holders receive
+the Bank of Canada interest rate plus.  </p>
+
+<p>
+REGISTERED AFFILIATE Consumers are those non-members who own less than
+2 Memes & pay a Registration Fee (1/2 Meme / year) to be accredited 1/10 %
+per transaction in building their Meme Account.  </p>
+
+<p>
+WORKER members own at least 20 Memes, investing expertise, time,
+knowledge, skills etc at less than 50% of their Compensation Package
+in Memes.  </p>
+
+<p>
+SUPPLIER members own at least 20 Memes, investing Goods & Services such
+as through exceptional discounts recognized as investments into the
+Corporate Economy.  </p>
+
+<p>
+FOUNDER / FUND members own at least 40 Memes, investing expertise,
+resources, time, knowledge, etc. at a rate of greater than 50% of
+compensation in Memes.  </p>
+
+<p>
+YEARLY REGISTRATION FEE: Members are charged only one Registration/Record
+Fee per year equal to ? Meme (5$08).  This fee includes membership in
+all Associations covered by this fee.  </p>
+
+<p>
+MEMES (Memory of contributions) are equal in value to the current Quebec
+Minimum Wage (10$15/ hour in 2013) or the value of a basic hour of work for an untrained
+ beginning worker, which is capable of supporting a Living-Wage.
+ As Quebec's Minimum Wage rises so does the value of the Meme.
+ The Corporate Board may adjust the Meme's value in consideration of an
+ adequate Living Wage. Each Vendor is free to charge rates per hour or
+ per task as they desire but we expect rates roughly following market
+ rates for goods & services.  Members invest/affiliate their Memes
+ to accounts within each Association where their membership rights &
+ benefits are received.
+</p>
+
+<p>
+Vendor Members are required to own a MINIMUM of one Meme
+(non-voting). Each stakeholder Association has a schedule of minimum
+& maximum Meme ownership & the rights associated with each level of
+Progressive Ownership. At minimums of:  2 memes, Consumers are voting
+members, 20 Memes, Workers are voting, 20 Memes, Suppliers are voting &
+40 Memes, Founders are voting members.  Each Meme provides a vote for
+voting members to express their will within each Association & through
+their elected Directors on the Corporate Board of Directors.  </p>
+
+<p>
+MAXIMUM Meme ownership per person is determined to keep Popular
+Participatory ownership decision-making within each Association
+described within the Document <a href='https://sites.google.com/site/indigenecommunity/relational-economy/3-sharing-livelihood-constitution'>'Sharing our Livelihood'</a>. When
+members of Consumer, Worker & Supplier Associations have
+passed their Association maximum share ownership levels,
+they are able to transfer these into the Founder/Fund Association.
+
+</p>
+
+
+<!--
+          <h1>Getting started</h1>
+          <h2>Here&rsquo;s how to get rolling:</h2>
+          <ol>
+            <li>
+              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
+
+
+              <p>To see all available options, run it without parameters.</p>
+            </li>
+
+            <li>
+              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
+              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
+            </li>
+
+            <li>
+              <h2>Create your database</h2>
+              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
+            </li>
+          </ol>
+-->
+<ul>
+<li><a href="consumers">consumer</a></li>
+<li><a href="employees">employee</a></li>
+<li><a href="suppliers">supplier</a></li>
+<li><a href="founders">founder</a></li>
+<hr />
+<li><a href="services">service</a></li>
+<li><a href="products">product</a></li>
+<li><a href="pets">pet</a></li>
+</ul>
+        </div>
+      </div>
+
+      <div id="footer">&nbsp;</div>
+    </div>
+  </body>
+</html>

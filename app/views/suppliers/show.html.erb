@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Supplier:</b>
+  <%= @supplier.supplier %>
+</p>
+
+<p>
+  <b>Accountnum:</b>
+  <%= @supplier.accountNum %>
+</p>
+
+<p>
+  <b>Invoicenum:</b>
+  <%= @supplier.invoiceNum %>
+</p>
+
+<p>
+  <b>Excepionaldiscount:</b>
+  <%= @supplier.excepionalDiscount %>
+</p>
+
+<p>
+  <b>Phsaccorded:</b>
+  <%= @supplier.PHSAccorded %>
+</p>
+
+<p>
+  <b>Totalphs:</b>
+  <%= @supplier.TotalPHS %>
+</p>
+
+<p>
+  <b>Goodsservicesreceived:</b>
+  <%= @supplier.GoodsServicesReceived %>
+</p>
+
+
+<%= link_to 'Edit', edit_supplier_path(@supplier) %> |
+<%= link_to 'Back', suppliers_path %>

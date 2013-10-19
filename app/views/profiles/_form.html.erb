@@ -1,0 +1,69 @@
+<%= form_for(@profile) do |f| %>
+  <% if @profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% @profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :street_address %><br />
+    <%= f.text_field :street_address %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :province %><br />
+    <%= f.text_field :province %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_code %><br />
+    <%= f.text_field :postal_code %>
+  </div>
+  <div class="field">
+    <%= f.label :home_telephone %><br />
+    <%= f.text_field :home_telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :work_telephone %><br />
+    <%= f.text_field :work_telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_telephone %><br />
+    <%= f.text_field :cell_telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :email_public %><br />
+    <%= f.text_field :email_public %>
+  </div>
+  <div class="field">
+    <%= f.label :email_private %><br />
+    <%= f.text_field :email_private %>
+  </div>
+  <div class="field">
+    <%= f.label :experience %><br />
+    <%= f.text_area :experience %>
+  </div>
+  <div class="field">
+    <%= f.label :training %><br />
+    <%= f.text_area :training %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

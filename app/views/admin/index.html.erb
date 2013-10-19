@@ -1,0 +1,15 @@
+<h1>Admin#index</h1>
+<p>Find me in app/views/admin/index.html.erb</p>
+    <div id="user_nav">
+    <% if current_user %>
+       Logged in as <%= current_user.email %>
+       <ul>
+       <li><%= link_to "Pets", pets_path %></li>
+       <li><%= link_to "Products", products_path %></li>
+       <li><%= link_to "Services", services_path %></li>
+       <li><%= link_to "Personals", personals_path %></li>
+       </ul>
+    <% else %>
+    <% end %>
+    </div>
+

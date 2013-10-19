@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  employeeNum: 1
+  contract: MyString
+  position: MyString
+  workPerformed: MyString
+  hourWorked: 1
+  PHSAccredited: 9.99
+  salaryGoodsOrServicesReceived: 9.99
+
+two:
+  name: MyString
+  employeeNum: 1
+  contract: MyString
+  position: MyString
+  workPerformed: MyString
+  hourWorked: 1
+  PHSAccredited: 9.99
+  salaryGoodsOrServicesReceived: 9.99

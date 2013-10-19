@@ -1,0 +1,45 @@
+<%= form_for(@consumer) do |f| %>
+  <% if @consumer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@consumer.errors.count, "error") %> prohibited this consumer from being saved:</h2>
+
+      <ul>
+      <% @consumer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :accountNum %><br />
+    <%= f.number_field :accountNum %>
+  </div>
+  <div class="field">
+    <%= f.label :PHS %><br />
+    <%= f.text_field :PHS %>
+  </div>
+  <div class="field">
+    <%= f.label :purchases %><br />
+    <%= f.number_field :purchases %>
+  </div>
+  <div class="field">
+    <%= f.label :accreditation %><br />
+    <%= f.text_field :accreditation %>
+  </div>
+  <div class="field">
+    <%= f.label :creditsUsed %><br />
+    <%= f.number_field :creditsUsed %>
+  </div>
+  <div class="field">
+    <%= f.label :creditsAvailable %><br />
+    <%= f.number_field :creditsAvailable %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

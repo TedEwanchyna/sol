@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  fundAccontNum: 1
+  PHSHeld: 9.99
+  preferredShares: MyString
+  PHSOrigin: 9.99
+  memberships: MyString
+  riskCapital: 9.99
+  specialCompensation: 9.99
+
+two:
+  name: MyString
+  fundAccontNum: 1
+  PHSHeld: 9.99
+  preferredShares: MyString
+  PHSOrigin: 9.99
+  memberships: MyString
+  riskCapital: 9.99
+  specialCompensation: 9.99

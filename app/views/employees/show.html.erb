@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @employee.name %>
+</p>
+
+<p>
+  <b>Employeenum:</b>
+  <%= @employee.employeeNum %>
+</p>
+
+<p>
+  <b>Contract:</b>
+  <%= @employee.contract %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @employee.position %>
+</p>
+
+<p>
+  <b>Workperformed:</b>
+  <%= @employee.workPerformed %>
+</p>
+
+<p>
+  <b>Hourworked:</b>
+  <%= @employee.hourWorked %>
+</p>
+
+<p>
+  <b>Phsaccredited:</b>
+  <%= @employee.PHSAccredited %>
+</p>
+
+<p>
+  <b>Salarygoodsorservicesreceived:</b>
+  <%= @employee.salaryGoodsOrServicesReceived %>
+</p>
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

@@ -1,0 +1,49 @@
+<%= form_for(@founder) do |f| %>
+  <% if @founder.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@founder.errors.count, "error") %> prohibited this founder from being saved:</h2>
+
+      <ul>
+      <% @founder.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :fundAccontNum %><br />
+    <%= f.number_field :fundAccontNum %>
+  </div>
+  <div class="field">
+    <%= f.label :PHSHeld %><br />
+    <%= f.text_field :PHSHeld %>
+  </div>
+  <div class="field">
+    <%= f.label :preferredShares %><br />
+    <%= f.text_field :preferredShares %>
+  </div>
+  <div class="field">
+    <%= f.label :PHSOrigin %><br />
+    <%= f.text_field :PHSOrigin %>
+  </div>
+  <div class="field">
+    <%= f.label :memberships %><br />
+    <%= f.text_field :memberships %>
+  </div>
+  <div class="field">
+    <%= f.label :riskCapital %><br />
+    <%= f.text_field :riskCapital %>
+  </div>
+  <div class="field">
+    <%= f.label :specialCompensation %><br />
+    <%= f.text_field :specialCompensation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

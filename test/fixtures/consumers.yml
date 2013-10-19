@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  accountNum: 1
+  PHS: 9.99
+  purchases: 1
+  accreditation: MyString
+  creditsUsed: 1
+  creditsAvailable: 1
+
+two:
+  name: MyString
+  accountNum: 1
+  PHS: 9.99
+  purchases: 1
+  accreditation: MyString
+  creditsUsed: 1
+  creditsAvailable: 1

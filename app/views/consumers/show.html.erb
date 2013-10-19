@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @consumer.name %>
+</p>
+
+<p>
+  <b>Accountnum:</b>
+  <%= @consumer.accountNum %>
+</p>
+
+<p>
+  <b>Phs:</b>
+  <%= @consumer.PHS %>
+</p>
+
+<p>
+  <b>Purchases:</b>
+  <%= @consumer.purchases %>
+</p>
+
+<p>
+  <b>Accreditation:</b>
+  <%= @consumer.accreditation %>
+</p>
+
+<p>
+  <b>Creditsused:</b>
+  <%= @consumer.creditsUsed %>
+</p>
+
+<p>
+  <b>Creditsavailable:</b>
+  <%= @consumer.creditsAvailable %>
+</p>
+
+
+<%= link_to 'Edit', edit_consumer_path(@consumer) %> |
+<%= link_to 'Back', consumers_path %>
